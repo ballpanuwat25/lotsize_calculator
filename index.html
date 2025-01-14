@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lot Size Calulator</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>XAUUSD</h1>
+    <input type="text" id="balance" placeholder="Balance" value="10000">
+    <input type="text" id="risk" placeholder="Risk %" value="1">
+    <hr>
+    <input type="text" id="stoploss" placeholder="Stop Loss (Pips)">
+    <hr>
+    <input class="price" type="text" id="openprice" placeholder="Open Price">
+    <input class="price" type="text" id="stoploss_price" placeholder="Stop Loss">
+    <button id="calculate">Calculate Pips</button>
+    <hr>
+    <input type="text" id="pipvalue" placeholder="Pip Value (USD)" value="1">
+    <hr>
+
+    <h1>Lot Size: <span id="lotsize">0.00</span></h1>
+
+    <script src="index.js"></script>
+</body>
+</html>
