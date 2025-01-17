@@ -3,7 +3,19 @@ $(document).ready(function() {
     let risk = $('#risk').val();
     let pipvalue = $('#pipvalue').val();
 
-    let risk_amount = balance * risk / 100;
+    let risk_amount = balance * risk / 100;;
+
+    $('#risk').on('input', function() {
+        risk = $(this).val();
+
+        risk_amount = balance * risk / 100;
+    });
+
+    $('#balance').on('input', function() {
+        balance = $(this).val();
+
+        risk_amount = balance * risk / 100;
+    });
 
     $('#stoploss').on('input', function() {
         let stoploss = $(this).val();
