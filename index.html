@@ -9,20 +9,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1>XAUUSD</h1>
+    <h1>ACCOUNT</h1>
+    <label for="balance">Balance: </label>
     <input type="text" id="balance" placeholder="Balance" value="10000">
+    <label for="risk">Risk %: </label>
     <input type="text" id="risk" placeholder="Risk %" value="1">
     <hr>
+    <h1>XAUUSD | Lot Size: <span id="lotsize">0.00</span></h1>
     <input type="text" id="stoploss" placeholder="Stop Loss (Pips)">
     <hr>
     <input class="price" type="text" id="openprice" placeholder="Open Price">
     <input class="price" type="text" id="stoploss_price" placeholder="Stop Loss">
     <button id="calculate">Calculate Pips</button>
     <hr>
-    <input type="text" id="pipvalue" placeholder="Pip Value (USD)" value="1">
+    <input type="hidden" id="pipvalue" placeholder="Pip Value (USD)" value="1">
     <hr>
-
-    <h1>Lot Size: <span id="lotsize">0.00</span></h1>
+    <h1>EURUSD | Lot Size: <span id="eu_lotsize">0.00</span></h1>
+    <input type="text" id="eu_stoploss" placeholder="Stop Loss (Pips)">
+    <hr>
+    <input class="price" type="text" id="eu_openprice" placeholder="Open Price">
+    <input class="price" type="text" id="eu_stoploss_price" placeholder="Stop Loss">
+    <button id="eu_calculate">Calculate Pips</button>
+    <hr>
 
     <script src="index.js"></script>
 </body>
